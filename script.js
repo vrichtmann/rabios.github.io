@@ -21,7 +21,7 @@ var projects = [
         url: "https://github.com/Rabios/CLua"
     },
     {
-        name: "steria773-archive",
+        name: "Telvisionation",
         description: "Archive of my old and deleted projects",
         url: "https://github.com/steria773-archive"
     }
