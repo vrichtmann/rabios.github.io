@@ -179,8 +179,6 @@ var codes = [
     {
         code:
         `
-        // Written by Rabia Alhaffar in 8/September/2020
-        // Tilemaps system investigation
         global map
         global colors
         
