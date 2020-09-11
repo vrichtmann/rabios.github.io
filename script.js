@@ -6,6 +6,12 @@ bubbly({
 
 var projects = [
     {
+        name: "rayport",
+        description: "Awesome C99, Header-Only, rayfork wrapper for raylib!",
+        url: "https://github.com/Rabios/rayport"
+    },
+
+    {
         name: "raylua",
         description: "LuaJIT bindings for raylib game programming library",
         url: "https://github.com/Rabios/raylua"
@@ -130,16 +136,14 @@ var codes = [
             BeginDrawing();
             ClearBackground(backcolor);         
             BeginMode3D(gamecam);
-            // DrawBillboard(gamecam,gamelogo,(Vector3){ 0.0f,10.0f,0.0f },64,WHITE);
             Draw3DDefaults(env,nightmode,ppos);
             DrawWeapon(1);            
             CombatLogic();
             EndMode3D();            
             GameGUI();
             DrawFPS(10,10);
-            //DrawTextureEx(crosshair,(Vector2){ GetMouseX() - 20,GetMouseY() - 80 },0.0f,0.1f,DARKPURPLE);
             DrawTextEx(f2,"BACK: BACKSPACE",(Vector2){ 10.0f,GetScreenHeight() - 120.0f },32,1.0f,BLACK);
-            if(IsKeyPressed(KEY_BACKSPACE)) scene = 2;
+            if (IsKeyPressed(KEY_BACKSPACE)) scene = 2;
             EndDrawing();    
             TraceLog(LOG_INFO,"FREEMODE STARTED SUCCESSFULLY!!!");
         }`,
@@ -379,7 +383,7 @@ var codes = [
 ];
 
 function randomize_code() {
-    var random_code = codes[Math.floor(Math.random() * (codes.length))];
+    var random_code = codes[Math.floor(Math.random() * codes.length)];
     document.getElementById("edit").innerHTML = random_code.code;
     document.getElementById("edit").className = random_code.language;
     document.getElementById("random-source-code").href = random_code.src;
