@@ -16,16 +16,19 @@ var projects = [
         description: "LuaJIT bindings for raylib game programming library",
         url: "https://github.com/Rabios/raylua"
     },
+
     {
         name: "Crosskit",
         description: "Cross renderer for SVG, DOM, Canvas, WebGL",
         url: "https://github.com/Rabios/crosskit"
     },
+
     {
         name: "CLua",
         description: "Implementation of Lua via LuaJIT FFI and pure Lua code",
         url: "https://github.com/Rabios/CLua"
     },
+    
     {
         name: "Telvisionation",
         description: "Archive of my old and deleted projects",
